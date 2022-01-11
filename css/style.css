@@ -63,8 +63,8 @@ nav ul li a {
 @keyframes glow {
     0%   {color: red;}
     25%  {color: orange;}
-    50%  {color: blue;}
-    100% {color: green;}
+    50%  {color: green;}
+    100% {color: white;}
   }
 
 section {
@@ -345,6 +345,10 @@ h3 {
 @media screen and (max-width:680px) {
     #home {
         display: block;
+    }
+
+    nav {
+        position: static;
     }
 
     #home img {
