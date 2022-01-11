@@ -54,10 +54,18 @@ nav ul li a {
     color: #EED9B7;
 }
 
-nav ul li a:hover {
-    color: #DB051F;
+.glow li a:hover {
     text-decoration: underline;
+    animation-name: glow;
+    animation-duration: 4s;
 }
+
+@keyframes glow {
+    0%   {color: red;}
+    25%  {color: orange;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
 
 section {
     margin-bottom: 50px !important;
@@ -104,16 +112,30 @@ section {
     margin: 0 auto;
 }
 
-#contact p {
-    display: inline-block;
+#contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact ul li {
     padding: 10px;
-    background-color: white;
+    background-color: #353436;
     border: gray solid 2px;
+    margin: 10px;
+}
+
+#contact ul li a {
+    color: #EED9B7;
+}
+
+i {
+    font-size: 25px;
 }
 
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     background-color: #353436;
@@ -124,6 +146,8 @@ footer {
 label {
     display: inline-block;
     width: 15%;
+    font-size: 20px;
+    color: #000;
     margin-bottom: auto;
 }
 input, textarea {
@@ -207,4 +231,67 @@ h3 {
     font-size: 25px;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+@media screen and (max-width:1140px) {
+    .about {
+        display: block;
+    }
+
+    .about > div {
+        width: 100%;
+        border: none;
+    }
+
+    .skills > div {
+        text-align: center;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer p:first-child {
+        margin-bottom: 25px;
+    }
+    
+    button {
+        margin: 10px auto !important;
+    }
+}
+
+@media screen and (max-width:680px) {
+    #home {
+        display: block;
+    }
+
+    #home img {
+        max-height: 70vh;
+        max-width: 80%;
+        padding: 20px;
+    }
+
+    #home > div {
+        width: 100%;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    #home ,#about , #services , #contact{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .skill_logo {
+        width: 60px;
+        margin: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
 }
