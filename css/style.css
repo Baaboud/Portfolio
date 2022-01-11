@@ -9,10 +9,6 @@ body {
     background-color: #E9E9E9;
 }
 
-section {
-    margin-bottom: 50px !important;
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -22,12 +18,28 @@ ul {
     list-style: none;
 }
 
+nav {
+    display: flex;
+    background-color: #353436;
+    box-shadow: 0px 1px 15px gray;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+nav img {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    padding: 10px 50px;
+    margin: auto 0;
+}
+
 nav ul {
     display: flex;
-    /* background-color: #E9E9E9; */
-    background-color: white;
-    box-shadow: 0px 2px 10px gray;
-    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
     padding: 10px;
 }
 
@@ -39,7 +51,16 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #EED9B7;
+}
+
+nav ul li a:hover {
     color: #DB051F;
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 50px !important;
 }
 
 #home {
@@ -53,7 +74,9 @@ nav ul li a {
 }
 
 #home img {
-    width: 50%;
+    max-height: 90vh;
+    max-width: 90%;
+    padding: 20px;
 }
 
 .intro span {
@@ -76,28 +99,9 @@ nav ul li a {
     font-size: 30px;
 }
 
-#about , #services , #contact {
+#about , #services , #contact{
     width: 80%;
     margin: 0 auto;
-}
-
-#about > div {
-    display: flex;
-    margin: 0 auto;
-}
-
-#about div div {
-    width: 50%;
-}
-
-.skills span {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-progress {
-    float: right;
-    margin-right: 50%;
 }
 
 #contact p {
@@ -109,7 +113,87 @@ progress {
 
 
 footer {
+    display: flex;
+    justify-content: space-between;
     padding: 30px;
-    background-color: black;
+    background-color: #353436;
+    color: #EED9B7;
+    font-size: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 15%;
+    margin-bottom: auto;
+}
+input, textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+textarea {
+    width: 90%;
+}
+
+  textarea {
+      height: 100px;
+  }
+  
+  button {
+    background-color: gray;
     color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 80%;
+  }
+
+  
+
+h2 {
+    color: #DB051F;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+}
+
+.about h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: gray;
+}
+
+.about > div {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.about > div > ul {
+    list-style: circle;
+}
+
+.about div ul li {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.skill_logo {
+    width: 60px;
+    margin: 40px;
+}
+
+.skills {
+    border-right: gray solid 3px;
+    margin-right: 40px;
 }

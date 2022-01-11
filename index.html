@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Baaboud</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/plain.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <nav>
+        <img src="images/plain.png" alt="">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -26,38 +28,45 @@
             <img src="images/baaboud.png" alt="">
         </div>
         <div class="intro">
-            <span>Abdullah Baaboud</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque porro asperiores debitis quos optio,
-                temporibus error illo nihil quia aspernatur eligendi repellendus, fugit quibusdam blanditiis odio
-                dolorum commodi dicta dolores.</p>
+            <span>Who am I ?</span>
+            <p>My name is Abdullah Baaboud. I'm a Fullstack Devloper.
+                I develop modern and high quality
+                websites, focusing on both Front End and Back End.</p>
         </div>
     </section>
 
     <section id="about">
         <h2>About</h2>
-        <h3>Skills</h3>
-        <div class="skills">
-            <div>
-                <span>Front End</span>
-                <ul>
-                    <li>HTML 5  <progress value="80" max="100"></progress></li>
-                    <li>CSS <progress value="80" max="100"></progress></li>
-                    <li>Java Script <progress value="80" max="100"></progress></li>
-                    <li>Bootstrap  <progress value="80" max="100"></progress></li>
-                </ul>
+        <div class="about">
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div>
+                    <img class="skill_logo" src="images/1.png" alt="">
+                    <img class="skill_logo" src="images/2.png" alt="">
+                    <img class="skill_logo" src="images/3.png" alt="">
+                    <img class="skill_logo" src="images/4.png" alt="">
+                    <img class="skill_logo" src="images/5.png" alt="">
+                    <img class="skill_logo" src="images/6.png" alt="">
+                    <img class="skill_logo" src="images/7.png" alt="">
+                    <img class="skill_logo" src="images/8.png" alt="">
+                    <img class="skill_logo" src="images/9.png" alt="">
+                    <img class="skill_logo" src="images/10.png" alt="">
+                    <img class="skill_logo" src="images/11.png" alt="">
+                    <img class="skill_logo" src="images/12.png" alt="">
+                </div>
             </div>
+    
             <div>
-                <span>Front End</span>
+                <h3>My Experince</h3>
                 <ul>
-                    <li>PHP  <progress value="80" max="100"></progress></li>
-                    <li>Database  <progress value="80" max="100"></progress></li>
+                    <li>Participation in the Full stack bootcamp of Coding Academy 2022</li>
+                    <li>Participation in the scientific exhibition of the Department of Computer Engineering for the year
+                        2019</li>
+                    <li>Participation in the scientific exhibition of the Department of Computer Engineering for the year
+                        2017</li>
                 </ul>
             </div>
         </div>
-        <h3>Experience</h3>
-        <ul>
-            <li></li>
-        </ul>
     </section>
 
     <section id="services">
@@ -70,16 +79,17 @@
     </section>
 
     <section id="contact">
-        </form>
         <h2>Contact</h2>
 
-        <form action="">
-            <label for="email">Enter Your Email</label>
-            <input type="email" name="" id="email">
-            <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Send">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Write subject..">
+            <textarea id="message" name="message" placeholder="Write Your Message.."></textarea>
+            <button>Send Message</button>
         </form>
 
 
@@ -87,7 +97,8 @@
     </section>
 
     <footer>
-        <p>Copyright ©2022 All rights reserved | This portfolio is made by Abdullah Baaboud</p>
+        <p>Copyright ©2022 All rights reserved</p>
+        <p>This portfolio is made by Abdullah Baaboud</p>
     </footer>
 </body>
 
