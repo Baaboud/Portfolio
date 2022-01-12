@@ -126,6 +126,7 @@ section {
 
 #contact ul li a {
     color: #EED9B7;
+    padding: 5px;
 }
 
 i {
@@ -234,10 +235,17 @@ h3 {
     margin-left: 20px;
 }
 
+.services > div {
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
 .ring
 {
-    margin: 150px auto;
-  transform:translate(-50%,-50%);
+  position: relative;
+  margin-top: 50px;
+  left: 50%;
+  transform:translate(-50%, 0px);
   width:150px;
   height:150px;
   background:transparent;
@@ -377,6 +385,13 @@ h3 {
 
     nav ul {
         flex-direction: column;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
 }
