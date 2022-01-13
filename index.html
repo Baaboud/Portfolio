@@ -12,20 +12,21 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
-<body>
-    <nav>
+<body id="body">
+    <nav id="nav">
         <img src="images/plain.png" alt="">
         <ul class="glow">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="dark_link">Home</a></li>
+            <li><a href="#about" class="dark_link">About</a></li>
+            <li><a href="#services" class="dark_link">Services</a></li>
+            <li><a href="#contact" class="dark_link">Contact</a></li>
         </ul>
+        <button onclick="darkFunction()"><i class="fas fa-toggle-off"></i><p>Dark Mode</p></button>
     </nav>
 
     <section id="home">
         <div>
-            <img src="images/baaboud.png" alt="">
+            <img src="images/baaboud.png" alt="" id="logo" onmouseover="effect()">
         </div>
         <div class="intro">
             <span>Who am I ?</span>
@@ -87,35 +88,43 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <h3>Get in touch</h3>
-        <form>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Write subject..">
-            <textarea id="message" name="message" placeholder="Write Your Message.."></textarea>
-            <button>Send Message</button>
-        </form>
-
-        <h3>Social Media</h3>
-        <ul class="glow">
-            <li><a href="#">Facebook <i class="fab fa-facebook"></i></a></li>
-            <li><a href="#">Twitter <i class="fab fa-twitter"></i></a></li>
-            <li><a href="#">Github <i class="fab fa-github"></i></a></li>
-            <li><a href="#">Whatsapp <i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="#">Telegram <i class="fab fa-telegram"></i></a></li>
-            <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
-            <li><a href="#">Snapchat <i class="fab fa-snapchat"></i></a></li>
-
-        </ul>
+        <div class="contact">
+            <div class="split">
+                <h3>Get in touch</h3>
+                <form onsubmit="return validate ()">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email..">
+                    <label for="Email">Email</label>
+                    <input type="text" id="subject" name="subject" placeholder="Write subject..">
+                    <textarea id="message" name="message" placeholder="Write Your Message.."></textarea>
+                    <div class="btn"><button>Send Message</button></div>
+                </form>
+            </div>
+    
+            <div>
+                <h3>Social Media</h3>
+                <ul class="glow">
+                    <li><a href="#">Facebook <i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#">Twitter <i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#">Github <i class="fab fa-github"></i></a></li>
+                    <li><a href="#">Whatsapp <i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#">Telegram <i class="fab fa-telegram"></i></a></li>
+                    <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#">Snapchat <i class="fab fa-snapchat"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <p>Copyright &copy; 2022 All rights reserved</p>
         <p>This portfolio is made by Abdullah Baaboud</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
