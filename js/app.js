@@ -3,6 +3,8 @@ function darkFunction() {
     document.getElementById("body").classList.toggle("dark");
     document.getElementById("nav").classList.toggle("light");
     document.getElementById("footer").classList.toggle("light");
+    document.getElementById("home_link").classList.toggle("dark_text");
+    document.getElementById("switcher").classList.toggle("fa-toggle-on");
 }
 
 function effect() {
