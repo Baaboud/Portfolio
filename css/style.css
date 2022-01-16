@@ -19,8 +19,7 @@ body {
 }
 
 .dark-text {
-    color: black;
-    font-size: 100px;
+    color: white !important;
 }
 
 .filter {
@@ -246,7 +245,7 @@ label {
     display: inline-block;
     width: 15%;
     font-size: 20px;
-    color: #000;
+    color: gray;
     margin-bottom: auto;
 }
 

@@ -1,10 +1,18 @@
 function darkFunction() {
-    var links = document.getElementsByClassName("dark_link");
     document.getElementById("body").classList.toggle("dark");
     document.getElementById("nav").classList.toggle("light");
     document.getElementById("footer").classList.toggle("light");
-    document.getElementById("home_link").classList.toggle("dark_text");
     document.getElementById("switcher").classList.toggle("fa-toggle-on");
+    document.getElementById("logo").classList.toggle("filter");
+    document.querySelector(".intro p").classList.toggle("dark-text");
+    var links = document.querySelectorAll(".dark_link");
+    links.forEach(element => {
+        element.classList.toggle("dark-text");
+    });
+    var logo = document.querySelectorAll(".skill_logo");
+    logo.forEach(element => {
+        element.classList.toggle("filter");
+    });
 }
 
 function effect() {
