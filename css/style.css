@@ -59,6 +59,7 @@ nav ul {
     flex-wrap: wrap;
     flex-grow: 1;
     padding: 10px;
+    align-items: center;
 }
 
 nav ul li {

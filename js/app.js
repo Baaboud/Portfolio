@@ -16,7 +16,11 @@ function darkFunction() {
 }
 
 function effect() {
-    document.getElementById('logo').classList.toggle("logo_glow");
+    document.getElementById('logo').classList.add("logo_glow");
+}
+
+function noeffect() {
+    document.getElementById('logo').classList.remove("logo_glow");
 }
 
 function validate() {

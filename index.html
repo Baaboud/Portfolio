@@ -1,129 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baaboud</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/plain.png">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/plain.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body id="body">
+  <body id="body">
     <nav id="nav">
-        <img src="images/plain.png" alt="">
-        <ul class="glow">
-            <li><a href="#home" class="dark_link">Home</a></li>
-            <li><a href="#about" class="dark_link">About</a></li>
-            <li><a href="#services" class="dark_link">Services</a></li>
-            <li><a href="#contact" class="dark_link">Contact</a></li>
-        </ul>
-        <button onclick="darkFunction()"><i class="fas fa-toggle-off" id="switcher"></i><p>Dark Mode</p></button>
+      <img src="images/plain.png" alt="" />
+      <ul class="glow">
+        <li><a href="#home" class="dark_link">Home</a></li>
+        <li><a href="#about" class="dark_link">About</a></li>
+        <li><a href="#services" class="dark_link">Services</a></li>
+        <li><a href="#contact" class="dark_link">Contact</a></li>
+        <li>
+          <button onclick="darkFunction()">
+            <i class="fas fa-toggle-off" id="switcher"></i>
+            <p>Dark Mode</p>
+          </button>
+        </li>
+      </ul>
     </nav>
 
     <section id="home">
-        <div>
-            <img src="images/baaboud.png" alt="" id="logo" onmouseover="effect()">
-        </div>
-        <div class="intro">
-            <span>Who am I ?</span>
-            <p>My name is Abdullah Baaboud. I'm a Fullstack Devloper.
-                I develop modern and high quality
-                websites, focusing on both Front End and Back End.</p>
-        </div>
+      <div>
+        <img
+          src="images/baaboud.png"
+          alt=""
+          id="logo"
+          onmouseenter="effect()"
+          onmouseleave="noeffect()"
+        />
+      </div>
+      <div class="intro">
+        <span>Who am I ?</span>
+        <p>
+          My name is Abdullah Baaboud. I'm a Fullstack Devloper. I develop
+          modern and high quality websites, focusing on both Front End and Back
+          End.
+        </p>
+      </div>
     </section>
 
     <section id="about">
-        <h2>About</h2>
-        <div class="about">
-            <div class="skills">
-                <h3>My Skills</h3>
-                <div>
-                    <img class="skill_logo" src="images/1.png" alt="">
-                    <img class="skill_logo" src="images/2.png" alt="">
-                    <img class="skill_logo" src="images/3.png" alt="">
-                    <img class="skill_logo" src="images/4.png" alt="">
-                    <img class="skill_logo" src="images/5.png" alt="">
-                    <img class="skill_logo" src="images/6.png" alt="">
-                    <img class="skill_logo" src="images/7.png" alt="">
-                    <img class="skill_logo" src="images/8.png" alt="">
-                    <img class="skill_logo" src="images/9.png" alt="">
-                    <img class="skill_logo" src="images/10.png" alt="">
-                    <img class="skill_logo" src="images/11.png" alt="">
-                    <img class="skill_logo" src="images/12.png" alt="">
-                </div>
-            </div>
-
-            <div>
-                <h3>My Experince</h3>
-                <ul>
-                    <li>Participation in the Full stack bootcamp of Coding Academy 2022</li>
-                    <li>Participation in the scientific exhibition of the Department of Computer Engineering for the
-                        year
-                        2019</li>
-                    <li>Participation in the scientific exhibition of the Department of Computer Engineering for the
-                        year
-                        2017</li>
-                </ul>
-            </div>
+      <h2>About</h2>
+      <div class="about">
+        <div class="skills">
+          <h3>My Skills</h3>
+          <div>
+            <img class="skill_logo" src="images/1.png" alt="" />
+            <img class="skill_logo" src="images/2.png" alt="" />
+            <img class="skill_logo" src="images/3.png" alt="" />
+            <img class="skill_logo" src="images/4.png" alt="" />
+            <img class="skill_logo" src="images/5.png" alt="" />
+            <img class="skill_logo" src="images/6.png" alt="" />
+            <img class="skill_logo" src="images/7.png" alt="" />
+            <img class="skill_logo" src="images/8.png" alt="" />
+            <img class="skill_logo" src="images/9.png" alt="" />
+            <img class="skill_logo" src="images/10.png" alt="" />
+            <img class="skill_logo" src="images/11.png" alt="" />
+            <img class="skill_logo" src="images/12.png" alt="" />
+          </div>
         </div>
+
+        <div>
+          <h3>My Experince</h3>
+          <ul>
+            <li>
+              Participation in the Full stack bootcamp of Coding Academy 2022
+            </li>
+            <li>
+              Participation in the scientific exhibition of the Department of
+              Computer Engineering for the year 2019
+            </li>
+            <li>
+              Participation in the scientific exhibition of the Department of
+              Computer Engineering for the year 2017
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="services">
-        <h2>Services</h2>
-        <h3>Services Provided</h3>
-        <ul>
-            <li>Web design</li>
-            <li>mobile apps</li>
-            <li>UX | Ui</li>
-        </ul>
-        <h3>Previous Work</h3>
-        <div class="ring">Loading
-            <span></span>
-        </div>
+      <h2>Services</h2>
+      <h3>Services Provided</h3>
+      <ul>
+        <li>Web design</li>
+        <li>mobile apps</li>
+        <li>UX | Ui</li>
+      </ul>
+      <h3>Previous Work</h3>
+      <div class="ring">
+        Loading
+        <span></span>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact">
-            <div class="split">
-                <h3>Get in touch</h3>
-                <form onsubmit="return validate ()">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="email" name="email" placeholder="Your Email..">
-                    <label for="Email">Email</label>
-                    <input type="text" id="subject" name="subject" placeholder="Write subject..">
-                    <textarea id="message" name="message" placeholder="Write Your Message.."></textarea>
-                    <div class="btn"><button>Send Message</button></div>
-                </form>
-            </div>
-    
-            <div>
-                <h3>Social Media</h3>
-                <ul class="glow">
-                    <li><a href="#">Facebook <i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#">Twitter <i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#">Github <i class="fab fa-github"></i></a></li>
-                    <li><a href="#">Whatsapp <i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="#">Telegram <i class="fab fa-telegram"></i></a></li>
-                    <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#">Snapchat <i class="fab fa-snapchat"></i></a></li>
-                </ul>
-            </div>
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="split">
+          <h3>Get in touch</h3>
+          <form onsubmit="return validate ()">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your first name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your Email.."
+            />
+            <label for="Email">Email</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Write subject.."
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write Your Message.."
+            ></textarea>
+            <div class="btn"><button>Send Message</button></div>
+          </form>
         </div>
+
+        <div>
+          <h3>Social Media</h3>
+          <ul class="glow">
+            <li>
+              <a href="#">Facebook <i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#">Github <i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#">Whatsapp <i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#">Telegram <i class="fab fa-telegram"></i></a>
+            </li>
+            <li>
+              <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#">Snapchat <i class="fab fa-snapchat"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
-        <p>Copyright &copy; 2022 All rights reserved</p>
-        <p>This portfolio is made by Abdullah Baaboud</p>
+      <p>Copyright &copy; 2022 All rights reserved</p>
+      <p>This portfolio is made by Abdullah Baaboud</p>
     </footer>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
