@@ -5,11 +5,15 @@ function darkFunction() {
     document.getElementById("switcher").classList.toggle("fa-toggle-on");
     document.getElementById("logo").classList.toggle("filter");
     document.querySelector(".intro p").classList.toggle("dark-text");
-    var links = document.querySelectorAll(".dark_link");
+    const links = document.querySelectorAll(".dark_link");
     links.forEach(element => {
         element.classList.toggle("dark-text");
     });
-    var logo = document.querySelectorAll(".skill_logo");
+    const footer = document.querySelectorAll("footer p");
+    footer.forEach(element => {
+        element.classList.toggle("dark-text");
+    });
+    const logo = document.querySelectorAll(".skill_logo");
     logo.forEach(element => {
         element.classList.toggle("filter");
     });
